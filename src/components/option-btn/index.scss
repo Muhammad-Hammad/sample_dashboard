@@ -1,0 +1,22 @@
+@import "../../assets/styles/variables.scss";
+
+.option-btn {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  background: transparent;
+  border: transparent;
+  font-size: 16px;
+  color: $dark-grey;
+  transition: $hover;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: $hover;
+  }
+
+  &:first-child {
+    margin: 0 10px 0 0;
+  }
+}

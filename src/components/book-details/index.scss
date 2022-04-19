@@ -1,0 +1,75 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+
+.book-details-wrapper {
+  display: flex;
+  flex: 1;
+  margin: 1rem 0;
+  justify-content: space-between;
+
+  @include mobile-only {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .book-image {
+    display: flex;
+    flex: 0.2;
+
+    @include mobile-only {
+      justify-content: center;
+    }
+  }
+
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.75;
+    padding: 20px 10px;
+
+    .title {
+      font-size: 36px;
+      line-height: 43px;
+      margin: 10px 0px;
+    }
+
+    .sub-title {
+      font-size: 23px;
+      line-height: 28px;
+      margin: 10px 0px;
+    }
+
+    .author {
+      font-size: 18px;
+      line-height: 32px;
+      color: $cool-grey;
+      font-weight: 400;
+      margin: 10px 0px;
+    }
+
+    .options {
+      display: flex;
+      margin: 10px 0px;
+      padding: 10px 0px;
+      width: max-content;
+      white-space: nowrap;
+      border-top: 1px solid #5c626e1a;
+      border-bottom: 1px solid #5c626e1a;
+
+      @include mobile-only {
+        width: unset;
+        overflow-x: auto;
+      }
+
+      &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
+    }
+
+    .tags {
+      display: flex;
+      margin: 20px 0px;
+    }
+  }
+}

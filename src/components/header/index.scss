@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+
+.header-wrapper {
+  display: flex;
+  flex: 1;
+  background-color: $white;
+  padding: 1.5rem 8rem;
+
+  @include mobile-only {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    align-items: center;
+    flex: 0.5;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0.5;
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+}

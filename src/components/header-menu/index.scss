@@ -1,0 +1,19 @@
+@import "../../assets/styles/variables.scss";
+
+.header-menu-wrapper {
+  display: flex;
+  padding: 5px;
+  margin: 0 5px;
+  color: $cool-grey;
+  transition: $hover;
+
+  &.active {
+    color: $blue;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: $hover;
+  }
+}
